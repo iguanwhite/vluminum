@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.velp.vluminum">
+
+    <!-- PERMISSÕES -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <permission
+        android:name="com.example.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:icon="@drawable/ic_branca"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!-- Chave do Google Maps -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAi62Q3SItzjJZPw6LCdNDGbq3uLeZllyo" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Activity´s -->
+        <activity
+            android:name="br.com.velp.vluminum.activity.LoginActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.com.velp.vluminum.activity.CadastroPosteActivity_"
+            android:label="@string/cadastroPoste"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name="br.com.velp.vluminum.activity.DashboardActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="br.com.velp.vluminum.activity.MapaActivity_"
+            android:hardwareAccelerated="true"
+            android:label="@string/title_activity_mapa" />
+        <activity
+            android:name="br.com.velp.vluminum.activity.MapaPontoActivity_"
+            android:hardwareAccelerated="true"
+            android:label="@string/title_activity_mapa" />
+        <activity
+            android:name="br.com.velp.vluminum.activity.CadastroPontoActivity_"
+            android:label="@string/cadastroPonto"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name="br.com.velp.vluminum.activity.CadastroFotoActivity_"
+            android:label="@string/cadastroFoto"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".activity.PesquisaPontoActivity_"
+            android:label="@string/pesquisaPonto"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name="br.com.velp.vluminum.activity.ListaPontoActivity_"
+            android:label="@string/listaPontos"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="br.com.velp.vluminum.activity.ListaFotoActivity_"
+            android:label="@string/listaFotos"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.ConfiguracaoWsActivity_"
+            android:label="@string/configuracao"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".activity.CadastroOsActivity_"
+            android:label="@string/cadastroOs"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".activity.CadastroMaterialActivity_"
+            android:label="Cadastro de Material"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".activity.ListaMaterialActivity_"
+            android:label="Lista de Material"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".activity.QuestionarioActivity_"
+            android:label="@string/questionario"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".activity.PesquisaOsActivity_"
+            android:label="@string/pesquisaOs"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".activity.ListaOsActivity_"
+            android:label="@string/listaOs"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.ListaPontoOsActivity_"
+            android:label="@string/listaPontosOs"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.CadastroServicoActivity_"
+            android:label="@string/cadastroServico"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".activity.ListaPontoServicoActivity_"
+            android:label="@string/listaServicosPonto"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.ListaServicoActivity_"
+            android:label="@string/listaServicos"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.PesquisaServicoActivity_"
+            android:label="@string/pesquisaServicos"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".activity.SincronismoActivity_"
+            android:label="@string/sincronismo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.TabCadastroMaterialActivity_"
+            android:label="Materiais do Ponto"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.TabCadastroServicoActivity_"
+            android:label="Serviços do Ponto"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.LogUsuarioActivity_"
+            android:label="Log do Sincronismo"
+            android:screenOrientation="portrait"></activity>
+
+        <activity 
+            android:name=".activity.ListaOsPontoActivity_"
+            android:label="Lista de O.S's do Ponto"
+            android:screenOrientation="portrait"></activity>
+
+
+    </application>
+
+</manifest>

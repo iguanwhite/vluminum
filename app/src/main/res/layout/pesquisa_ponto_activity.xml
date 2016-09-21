@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.velp.vluminum.activity.PesquisaPontoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- MUNICÍPIO -->
+        <TextView
+            style="@style/labelCampoFormulario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Município:" />
+
+        <Spinner
+            android:id="@+id/municipioSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- LOGRADOURO -->
+        <TextView
+            style="@style/labelCampoFormulario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logradouroPesquisa" />
+
+        <EditText
+            android:id="@+id/logradouroEditText"
+            style="@style/campoFormulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="150"
+            android:maxLines="4"
+            android:singleLine="false" />
+
+        <!-- PONTO DE REFERÊNCIA -->
+        <TextView
+            style="@style/labelCampoFormulario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pontoReferenciaPesquisa" />
+
+        <EditText
+            android:id="@+id/pontoReferenciaEditText"
+            style="@style/campoFormulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <!-- NÚMERO PLAQUETA TRANSFORMADOR -->
+        <TextView
+            style="@style/labelCampoFormulario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/numPlaquetaTransformadorPesquisa" />
+
+        <EditText
+            android:id="@+id/numPlaquetaTransformadorEditText"
+            style="@style/campoFormulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <!-- BOTÕES -->
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1,2">
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/limparPesquisaPontoBtn"
+                    style="@style/botao"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:drawableLeft="@drawable/clear"
+                    android:text="@string/limpar" />
+
+                <Button
+                    android:id="@+id/pesquisarPontoBtn"
+                    style="@style/botao"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/search"
+                    android:focusable="false"
+                    android:text="@string/pesquisar" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/mapaBtn"
+                    style="@style/botao"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/marker"
+                    android:text="Mapa" />
+
+
+                <Button
+                    android:id="@+id/novoPontoBtn"
+                    style="@style/botao"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/add"
+                    android:text="Novo" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+

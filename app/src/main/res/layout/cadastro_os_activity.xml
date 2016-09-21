@@ -1,0 +1,507 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="br.com.velp.vluminum.activity.CadastroPontoActivity">
+
+    <ScrollView
+        android:id="@+id/parentScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/containerPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/dadosPonto"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#909090"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/loginLabelLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dados da Ordem de Serviço"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/labelCampoFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="26dp"
+                android:text="OS:" />
+
+            <EditText
+                android:id="@+id/osEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="98dp"
+                android:layout_marginTop="-30dp"
+                android:enabled="false"
+                android:inputType="number"
+                android:maxLength="8"
+                android:singleLine="false" />
+
+            <TextView
+                style="@style/labelCampoObrigatorioFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="16dp"
+                android:text="Motivo OS:" />
+
+            <Spinner
+                android:id="@+id/motivoAberturaSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="98dp"
+                android:layout_marginTop="-42dp" />
+
+            <TextView
+                style="@style/labelCampoFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="16dp"
+                android:text="Prioridade:" />
+
+            <Spinner
+                android:id="@+id/prioridadeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="98dp"
+                android:layout_marginTop="-42dp" />
+
+            <TextView
+                style="@style/labelCampoFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="16dp"
+                android:text="Prazo (Horas):" />
+
+            <EditText
+                android:id="@+id/prazoEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="98dp"
+                android:layout_marginTop="-32dp"
+                android:inputType="number"
+                android:maxLength="8"
+                android:singleLine="false" />
+
+            <TextView
+                android:id="@+id/labelObs"
+                style="@style/labelCampoFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="16dp"
+                android:text="Observação:" />
+
+
+            <EditText
+                android:id="@+id/obsEditText"
+                style="@style/campoFormulario"
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_gravity="center_horizontal"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/labelData"
+                style="@style/labelCampoFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+
+                android:layout_marginTop="16dp"
+                android:text="Data Criação:" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="98dp"
+                android:layout_marginTop="-32dp"
+                android:enabled="false"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/dataCriacaoEditText" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginLeft="300dp"
+                android:src="@drawable/calendar"
+
+                android:id="@+id/btnData" />
+
+
+            <RelativeLayout
+                android:id="@+id/dadosChamado"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="#909090"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/loginLabelChamado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dados do Chamado"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/labelProtocolo"
+                style="@style/labelCampoFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+
+                android:layout_marginTop="16dp"
+                android:text="Protocolo:" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="98dp"
+                android:layout_marginTop="-32dp"
+                android:enabled="false"
+                android:id="@+id/protocoloEditText" />
+
+
+            <TextView
+                android:id="@+id/labelNome"
+                style="@style/labelCampoFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="16dp"
+                android:text="Nome:" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="98dp"
+                android:layout_marginTop="-32dp"
+                android:enabled="false"
+                android:id="@+id/nomeEditText" />
+
+            <TextView
+                android:id="@+id/labelTelefone"
+                style="@style/labelCampoFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="16dp"
+                android:text="Telefone:" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="98dp"
+                android:layout_marginTop="-32dp"
+                android:enabled="false"
+                android:id="@+id/telefoneEditText" />
+
+
+
+            <TextView
+                android:id="@+id/labelQuantidade"
+                style="@style/labelCampoFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="16dp"
+                android:text="Quantidade:" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="98dp"
+                android:layout_marginTop="-32dp"
+                android:enabled="false"
+                android:id="@+id/quantidadeEditText" />
+
+
+            <RelativeLayout
+                android:id="@+id/dadosEndereco"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="#909090"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/loginLabelEndereco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Endereço da Ordem de Serviço"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/pesquisarEnderecoBtn"
+                style="@style/botao"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:height="2dp"
+                android:drawableLeft="@drawable/marker"
+                android:text="@string/pesquisarEndereco"
+                android:textStyle="normal" />
+
+            <TextView
+                style="@style/labelCampoFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="26dp"
+                android:text="Logradouro:"
+                android:textColor="#ff4180ff" />
+
+            <EditText
+                android:id="@+id/logradouroEditText"
+                style="@style/campoFormulario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="-34dp"
+                android:maxLength="150"
+                android:singleLine="false" />
+
+            <TextView
+                style="@style/labelCampoFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="20dp"
+                android:text="Nº:" />
+
+            <EditText
+                android:id="@+id/numLogradouroEditText"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="-32dp"
+                android:inputType="number"
+                android:maxLength="8"
+                android:singleLine="false" />
+
+            <TextView
+                style="@style/labelCampoFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="-20dp"
+                android:text="Bairro:" />
+
+            <EditText
+                android:id="@+id/bairroEditText"
+                style="@style/campoFormulario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="218dp"
+                android:layout_marginTop="-34dp"
+                android:maxLength="50"
+                android:singleLine="false" />
+
+            <TextView
+                style="@style/labelCampoFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="18dp"
+                android:text="Estado:"
+                android:textColor="#ff4180ff" />
+
+            <Spinner
+                android:id="@+id/estadoSpinner"
+                android:layout_width="100dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="-42dp" />
+
+            <!-- MUNICÍPIO -->
+            <TextView
+                style="@style/labelCampoFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="15dp"
+                android:text="Município:"
+                android:textColor="#ff4180ff" />
+
+            <Spinner
+                android:id="@+id/municipioSpinner"
+                android:layout_width="212dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="-42dp" />
+
+            <!-- CEP -->
+            <TextView
+                style="@style/labelCampoFormulario"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="15dp"
+                android:text="CEP:" />
+
+            <EditText
+                android:id="@+id/cepEditText"
+                style="@style/campoFormulario"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="-34dp"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <RelativeLayout
+                android:id="@+id/Outros"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="#909090"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/loginLabelOutros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Outros Cadastros"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/labelCampoFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="26dp"
+                android:text="Tipo Veículo:" />
+
+            <Spinner
+                android:id="@+id/tipoVeiculoSpinner"
+                android:layout_width="212dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="-32dp" />
+
+            <TextView
+                android:id="@+id/labelObsTecnica"
+                style="@style/labelCampoFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="26dp"
+                android:text="Observação Técnica:" />
+
+            <EditText
+                android:id="@+id/obsTecnicaEditText"
+                style="@style/campoFormulario"
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_gravity="center_horizontal"
+                android:ems="10" />
+
+
+            <RelativeLayout
+                android:id="@+id/endereco"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="18dp"
+                android:background="#909090"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/labelEndereco"
+                    style="@style/labelTituloFormulario"
+                    android:text="Ações" />
+            </RelativeLayout>
+
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:stretchColumns="0,1,2">
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/pontosBtn"
+                        style="@style/botao"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/ponto"
+                        android:text="Pontos" />
+
+                    <Button
+                        android:id="@+id/cadastrarFotoBtn"
+                        style="@style/botao"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/camera"
+                        android:text="@string/fotos" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/salvarOSBtn"
+                        style="@style/botao"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/check"
+
+                        android:paddingTop="8dp"
+                        android:text="@string/salvar" />
+
+                    <Button
+                        android:id="@+id/finalizarOSBtn"
+                        style="@style/botao"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/finalizar"
+                        android:paddingTop="8dp"
+                        android:text="@string/finalizar" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

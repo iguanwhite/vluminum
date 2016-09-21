@@ -1,0 +1,70 @@
+<resources>
+    <!-- TEMA BASE DA APLICAÇÃO. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:spinnerItemStyle">
+            @style/spinnerItemStyle
+        </item>
+
+        <item name="android:spinnerDropDownItemStyle">
+            @style/spinnerDropDownItemStyle
+        </item>
+
+        <item name="android:editTextStyle">
+            @style/myEditTextStyle
+        </item>
+    </style>
+
+    <style name="spinnerItemStyle">
+        <item name="android:padding">6dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="spinnerDropDownItemStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="myEditTextStyle" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="textoInformativo">
+        <item name="android:textColor">#646D71</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="textoMsgSucesso">
+        <item name="android:textColor">#04B404</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="labelCampoFormulario">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="campoFormulario">
+        <item name="android:inputType">textCapCharacters</item>
+    </style>
+
+    <style name="labelCampoObrigatorioFormulario">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ff4180ff</item>
+    </style>
+
+    <style name="botao">
+        <item name="android:textSize">14sp</item>
+        <item name="android:height">2dp</item>
+    </style>
+
+    <style name="labelTituloFormulario">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

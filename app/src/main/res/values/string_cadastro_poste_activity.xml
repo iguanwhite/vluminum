@@ -1,0 +1,10 @@
+<resources>
+    <!-- LABEL´S -->
+    <string name="sigla">Sigla: *</string>
+    <string name="descricao">Descrição: *</string>
+    <string name="altura">Altura:</string>
+    <string name="tipoPoste">Tipo de Poste: *</string>
+    <string name="tipoDefeito">Tipo de Defeito:</string>
+    <string name="barramento">Barramento: *</string>
+    <string name="informacaoTecnica">Informação Técnica:</string>
+</resources>

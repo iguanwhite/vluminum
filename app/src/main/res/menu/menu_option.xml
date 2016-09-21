@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <item
+        android:id="@+id/actionSinc"
+        android:title="@string/sincronismoInicial" />
+
+    <item
+        android:id="@+id/actionConfig"
+        android:title="@string/configuracao" />
+
+    <item
+        android:id="@+id/atualizar"
+        android:title="@string/atualizarAplicativo" />
+
+    <item
+        android:id="@+id/actionSair"
+        android:title="@string/sair" />
+
+
+</menu>

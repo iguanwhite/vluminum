@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.velp.vluminum.activity.CadastroServicoActivity">
+
+    <ScrollView
+        android:id="@+id/containerPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/labelCampoFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grupo:"
+                android:textColor="#ff4180ff" />
+
+            <Spinner
+                android:id="@+id/grupoServicoSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textNumSerie"
+                style="@style/labelCampoFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descrição:"
+                android:textColor="#ff4180ff" />
+
+            <EditText
+                android:id="@+id/fieldDescricao"
+                style="@style/campoFormulario"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/salvarServicoBtn"
+                style="@style/botao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/check"
+                android:text="@string/salvar" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

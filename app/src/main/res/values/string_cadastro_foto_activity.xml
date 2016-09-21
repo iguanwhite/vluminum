@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- LABEL´S -->
+    <string name="legenda">Legenda:</string>
+    <string name="ponto">Ponto:</string>
+    <string name="foto">Foto</string>
+    <string name="capturar">Capturar</string>
+</resources>
+

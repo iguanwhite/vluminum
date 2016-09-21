@@ -1,0 +1,12 @@
+<resources>
+    <!-- LABEL´S -->
+    <string name="usuario">Usuário</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+
+    <!-- MENSAGENS -->
+    <string name="msg_erro_usuario_invalido">Usuário inválido.</string>
+    <string name="msg_erro_senha_invalida">Senha inválida.</string>
+    <string name="msg_erro_login_invalido">Usuário e ou Senha inválidos.</string>
+    <string name="msg_erro_campo_obrigatorio">Campo obrigatório.</string>
+</resources>

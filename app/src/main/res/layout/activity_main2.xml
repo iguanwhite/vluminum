@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context="br.com.velp.vluminum.activity.TestActivity">
+
+
+    <fragment
+        android:id="@+id/mapa2"
+        class="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="115dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/pointn"
+            android:background="#F0F0F0"
+
+            android:id="@+id/btn_draw"
+            android:alpha="0.7"
+            android:textSize="12dp"
+            android:layout_marginLeft="10dp"
+            android:text="Rota" />
+
+        <Button
+            android:layout_width="115dp"
+            android:layout_height="40dp"
+
+            android:layout_alignTop="@+id/btn_draw"
+            android:drawableLeft="@drawable/rota"
+            android:background="#F0F0F0"
+            android:alpha="0.7"
+            android:textSize="12dp"
+            android:text="Navegação"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/btn_navegar"
+
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

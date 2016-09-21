@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33B5E5"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.velp.vluminum.activity.DashboardActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="@string/modulosTitulo"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/pontosTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:drawableTop="@drawable/point"
+            android:gravity="center"
+            android:text="@string/cadastros"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ordensServicoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/pontosTextView"
+            android:layout_marginRight="28dp"
+            android:clickable="true"
+            android:drawableTop="@drawable/mod_servicos"
+            android:gravity="center"
+            android:text="@string/servicos"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mapaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pontosTextView"
+            android:layout_alignStart="@+id/pontosTextView"
+            android:layout_below="@+id/pontosTextView"
+            android:layout_marginTop="72dp"
+            android:clickable="true"
+            android:drawableTop="@drawable/mod_mapa"
+            android:gravity="center"
+            android:text="@string/pontosNoMapa"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sincronismoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ordensServicoTextView"
+            android:layout_alignStart="@+id/ordensServicoTextView"
+            android:layout_alignTop="@+id/mapaTextView"
+            android:clickable="true"
+            android:drawableTop="@drawable/mod_sincronismo"
+            android:gravity="center"
+            android:text="@string/sincronismo"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</LinearLayout>

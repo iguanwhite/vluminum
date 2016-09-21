@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- LABEL´S -->
+    <string name="logradouroPesquisa">Logradouro:</string>
+    <string name="pontoReferenciaPesquisa">Ponto Referência:</string>
+    <string name="numPlaquetaTransformadorPesquisa">Nº Plaqueta:</string>
+</resources>

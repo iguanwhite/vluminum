@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- LABEL´S -->
+    <string name="modulosTitulo">MÓDULOS</string>
+    <string name="cadastros">Pontos</string>
+    <string name="servicos">Ordens de Serviço</string>
+    <string name="pontosNoMapa">Pontos no Mapa</string>
+    <string name="sincronismoMod">Sincronismo</string>
+</resources>

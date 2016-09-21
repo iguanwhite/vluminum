@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- LABEL´S -->
+    <string name="logradouro">Logradouro:</string>
+    <string name="numero">Nº:</string>
+    <string name="bairro">Bairro:</string>
+    <string name="estado">Estado:</string>
+    <string name="municipio">Município:</string>
+    <string name="cep">CEP:</string>
+    <string name="subestacao">Subestação:</string>
+    <string name="poste">Poste:</string>
+    <string name="alimentador">Alimentador:</string>
+    <string name="danificado">Danificado:</string>
+    <string name="direcao">Direção (Fase):</string>
+    <string name="pontoReferencia">Ponto Referência:</string>
+    <string name="numeroTransformador">Nº:</string>
+    <string name="proprietarioTransformador">Proprietário:</string>
+    <string name="potenciaTransformador">Potência (Watts):</string>
+    <string name="numCiaTransformador">Nº CIA.:</string>
+    <string name="numPlaquetaTransformador">Nº Plaqueta:</string>
+    <string name="numChaveTransformador">Nº Chave:</string>
+
+    <!-- LABEL´S DE TÍTULOS -->
+    <string name="pontoTitulo">Dados do Ponto</string>
+    <string name="enderecoTitulo">Endereço</string>
+    <string name="dadosTransformadorTitulo">Dados do Transformador</string>
+    <string name="acoesTitulo">Ações</string>
+</resources>

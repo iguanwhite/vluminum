@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Deseja realmente desvincular/trocar este Material do Ponto?"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:id="@+id/rdg"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rdEstoque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="Em Estoque"
+            android:textSize="17dp" />
+
+
+        <RadioButton
+            android:id="@+id/rdDanificado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Danificado"
+
+            android:textSize="17dp" />
+
+
+        <RadioButton
+            android:id="@+id/rdTroca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Troca"
+
+            android:textSize="17dp" />
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="fill_parent"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rdg"
+        android:layout_marginTop="10dp">
+
+
+        <!-- Num Série -->
+        <TextView
+            android:id="@+id/textNumSerieCustom"
+            style="@style/labelCampoFormulario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Nº de Série:"
+            android:textColor="#ff4180ff" />
+
+        <EditText
+            android:id="@+id/numSerieEditTextCustom"
+            style="@style/campoFormulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout03"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnNao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFF"
+            android:text="Não"></Button>
+
+        <Button
+            android:id="@+id/btnSim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFF"
+            android:text="Sim"></Button>
+    </LinearLayout>
+
+
+</RelativeLayout>

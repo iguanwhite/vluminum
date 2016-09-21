@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="br.com.velp.vluminum.activity.SincronismoActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="153dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="0.06"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="67dp"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/texto"
+            style="@style/textoMsgSucesso"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progress"
+            android:layout_marginLeft="9dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/labelCampoFormulario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="9dp"
+            android:text="Realizando o Upload de: " />
+
+        <TextView
+            android:id="@+id/tabela"
+            style="@style/labelCampoFormulario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/labelCampoFormulario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginLeft="9dp"
+            android:text="Total: " />
+
+        <TextView
+            android:id="@+id/qtde"
+            style="@style/labelCampoFormulario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_toLeftOf="@+id/tabela"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_toStartOf="@+id/tabela"
+            android:text="0"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:stretchColumns="0,1,2">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/buttonCancelar"
+                style="@style/botao"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Cancelar" />
+
+            <Button
+                android:id="@+id/buttonOk"
+                style="@style/botao"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="OK" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonErro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:text="Erros"
+        android:visibility="invisible" />
+</LinearLayout>
+

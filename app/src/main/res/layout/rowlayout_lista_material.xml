@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lineItem"
+    android:layout_width="wrap_content"
+    android:layout_height="80dp">
+
+
+    <TextView
+        android:id="@+id/text1N"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="5dip"
+        android:textColor="#ff000000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="86dip"
+        android:layout_marginTop="7dip"
+        android:textColor="#ff000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/text2N"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="25dip"
+        android:textColor="#ff000000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="86dip"
+        android:layout_marginTop="28dip"
+        android:textColor="#ff000000"
+        android:textSize="12sp" />
+
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="230dp">
+
+
+        <ImageView
+            android:id="@+id/btnRemoverPonto"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="20dip"
+
+
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

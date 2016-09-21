@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal">
+
+
+    <Button
+        android:id="@+id/btnVisualizar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#E8E8E8"
+        android:drawableLeft="@drawable/marker"
+        android:text="Visualizar Ponto"></Button>
+
+    <Button
+        android:id="@+id/btnCriar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnVisualizar"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="#E8E8E8"
+        android:drawableLeft="@drawable/ordem_servico"
+        android:text="Criar/ Acessar O.S"></Button>
+
+    <Button
+        android:id="@+id/btnRotas"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCriar"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="#E8E8E8"
+        android:drawableLeft="@drawable/rota"
+        android:text="Traçar Rota"></Button>
+
+
+</RelativeLayout>
